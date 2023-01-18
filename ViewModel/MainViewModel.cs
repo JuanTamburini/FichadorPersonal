@@ -32,5 +32,10 @@ namespace FichadorPersonal.ViewModel
                 ButtonText = $"Clicked {count} times";
 
          }
+        [RelayCommand]
+        async void GoToRegisterFormAsync()
+        {
+            await Shell.Current.GoToAsync("RegisterForm");
+        }
     }
 }

@@ -13,7 +13,7 @@
         </Tab>
         <Tab Title="Actividad"
              Icon="home_outline_icon.png">
-            <ShellContent ContentTemplate="{DataTemplate view:MainPage}" Route="ActivityPage"/>
+            <ShellContent ContentTemplate="{DataTemplate view:ActivityPage}" Route="ActivityPage"/>
         </Tab>
     </TabBar>
 

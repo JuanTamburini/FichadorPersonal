@@ -2,11 +2,48 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FichadorPersonal.View.ActivityPage"
-             Title="ActivityPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             >
+    <ContentPage.BackgroundColor>#EAEAEA</ContentPage.BackgroundColor>
+    <Grid RowDefinitions="100, *"
+          ColumnDefinitions="*"
+          >
+
+        <Grid RowDefinitions="*, *"
+              ColumnDefinitions="*, 60, *">
+            <BoxView Color="{StaticResource Primary}"
+                     Grid.ColumnSpan="3" />
+
+            <Label Text="Hola, Victoria"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   FontFamily="OpenSansSemibold"
+                   FontSize="18"
+                   Margin="15, 10, 0 ,0"/>
+
+            <Frame Grid.Column="1"
+                   Grid.RowSpan="3"
+                   HasShadow="False"
+                   BorderColor="White"
+                   Margin="0, 20"
+                   CornerRadius="80">
+                <Image Source="avatar_icon.png"
+                       WidthRequest="50"
+                       HeightRequest="50"
+                       Aspect="AspectFit"/>
+            </Frame>
+
+            <ImageButton Grid.Column="2"
+                         Source="configuration_icon.png"
+                         HorizontalOptions="End"
+                         WidthRequest="50"
+                         HeightRequest="50"
+                         Aspect="AspectFill"
+                         Padding="10"
+                         Margin="0"
+                         />
+        </Grid>
+        <CollectionView>
+            
+        </CollectionView>
+    </Grid>
 </ContentPage>

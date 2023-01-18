@@ -21,6 +21,9 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainViewModel>();
 		builder.Services.AddSingleton<MainPage>();
 
+		//RegisterFormPage
+		builder.Services.AddTransient<RegisterFormPage>();
+
 		return builder.Build();
 	}
 }

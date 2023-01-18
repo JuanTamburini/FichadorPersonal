@@ -48,8 +48,12 @@
             <ImageButton Grid.Column="2"
                          Source="configuration_icon.png"
                          HorizontalOptions="End"
+                         WidthRequest="50"
+                         HeightRequest="50"
                          Aspect="AspectFill"
                          Padding="10"
+                         Margin="0"
+                         Command="{Binding GoToRegisterFormAsyncCommand}"
                          />
         </Grid>
         <ScrollView Grid.Row="1">
@@ -79,14 +83,80 @@
 
                     </VerticalStackLayout>
                 </Frame>
+                <Frame Style="{StaticResource FrameContainer}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Esta quincena llevas trabajado:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                        <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="30" />
+                        <BoxView Color="#EAEAEA" HeightRequest="1"/>
+                        <HorizontalStackLayout>
+                            <VerticalStackLayout>
+                                <Label Text="Este mes:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                                <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="24" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
 
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Style="{StaticResource FrameContainer}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Esta quincena llevas trabajado:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                        <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="30" />
+                        <BoxView Color="#EAEAEA" HeightRequest="1"/>
+                        <HorizontalStackLayout>
+                            <VerticalStackLayout>
+                                <Label Text="Este mes:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                                <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="24" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame Style="{StaticResource FrameContainer}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Esta quincena llevas trabajado:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                        <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="30" />
+                        <BoxView Color="#EAEAEA" HeightRequest="1"/>
+                        <HorizontalStackLayout>
+                            <VerticalStackLayout>
+                                <Label Text="Este mes:"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="10"/>
+                                <Label Text="$24.327"
+                               FontFamily="OpenSansSemibold"
+                               FontSize="24" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
                 
             </VerticalStackLayout>
         </ScrollView>
 
         <Button Grid.Row="2"
                 Text="Fichar"
-                Margin="20" />
+                Margin="20"
+                Command="{Binding GoToRegisterFormAsyncCommand}"/>
     </Grid>
 
 </ContentPage>
