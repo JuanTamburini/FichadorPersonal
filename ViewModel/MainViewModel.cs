@@ -6,12 +6,11 @@ namespace FichadorPersonal.ViewModel
 
     public partial class MainViewModel : ObservableObject
     {
-        [ObservableProperty]
-        string title;
-
-        [ObservableProperty]
         int count;
 
+        [ObservableProperty]
+        string title;
+        
         [ObservableProperty]
         string buttonText;
 
