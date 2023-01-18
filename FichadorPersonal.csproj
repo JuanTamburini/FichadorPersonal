@@ -49,7 +49,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Remove="Resources\Images\configuration_icon.svg" />
+	  <None Remove="Resources\Images\avatar_icon.svg" />
+	  <None Remove="Resources\Images\home_outline_icon.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\ActivityPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 
